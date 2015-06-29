@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tennessee Valley Old Time Fiddlers Convention</string>
+    <string name="action_settings">Settings</string>
+ 	
+ 	<!-- Main Activity Text -->
+ 	<string name="question_text">What Would You Like To Do?</string>
+ 	
+ 	<!-- Info Home Activity Text -->
+  	<string name="info_home_main">Family, \n Friends, \n Fiddlers!</string>
+  	<string name="info_home_invite">YOU\'RE INVITED!\nTo the Annual\nTennessee Valley\nOld Time Fidlers\nConvention.</string>
+  	<string name="info_home_blob">Bring the family and enjoy a uniquely American experience whose roots are buried deep in the Appalchian mountains and beyond. It\'s a musical and cultural Experience that will thrust you into a simpler time where families were bound by the music they created and the stories they told.</string>
+ 		
+ 	<!-- Info Activity Text -->
+  	<string name="general_admission">GENERAL INFORMATION</string>
+ 	<string name="admission">Admission</string>
+ 	<string name="admission_info">Friday: Gates open at 8 a.m. \nSaturday: Gates open at 7:30 a.m.</string>
+ 	<string name="admission_cost">Admission Costs</string>
+   	<string name="admission_cost_info">$8.00 Friday, October 4, 2013 \n$10.00 Saturday, October 5, 2013 \n$15.00 for Both Days</string>
+ 	<string name="children_info">Children under 12 Free with Parents**No Pets Allowed Inside the Convention Gates**No Coolers Allowed Inside the Convention Gate."</string>
+ 	 	
+ 	<!-- Info2 Activity Text -->
+ 	<string name="info2_considerations">Considerations</string>
+ 	<string name="info2_stage">-  Stage is outdoors - Bring lawn chairs</string>
+ 	<string name="info2_rain">-  Contests will be held in the Gym in event of rain. Limited Capacity - NO REFUNDS</string>
+ 	<string name="info2_entry">-  Admission ticket will pay the entry fee \n for one category of competition</string>
+ 	<string name="info2_camping">-  Free Camping - No Hookups</string>
+ 	
+  	<!-- Schedule Activity Text -->	
+   	<string name="schedule">Schedule</string>	
+
+  	<!-- Winners Activity Text -->	
+   	<string name="winners">Winners</string>	   	
+   		
+ 	<!-- Image Descriptions -->
+ 	<string name="map_description">Picture of the Campus Map</string>
+ 	<string name="logo_description">Picture of Fiddlers Logo</string>
+ 	<string name="under_construction">Picture of Construction</string>
+ 	<string name="arrow_description">Picture of Red Arrow</string>
+ 	<string name="infologo_description">Picture of Logo for the InfoHomeActivity</string>
+ 	<string name="homelogo_description">Picture Red House</string>
+ 	 	
+ 	<!-- Button text -->
+ 	<string name="map_button">Campus Map</string>
+ 	<string name="admission_button">General Information</string>
+ 	<string name="winners_button">Winners</string>
+ 	<string name="schedule_button">Schedule</string>
+ 	<string name="cam_button">Live Fiddlers Cam</string>
+ 	
+</resources>
