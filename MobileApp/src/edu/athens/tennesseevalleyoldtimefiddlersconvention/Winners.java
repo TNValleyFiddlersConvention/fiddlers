@@ -29,7 +29,7 @@ public class Winners extends ListActivity {
 		StrictMode.setThreadPolicy(policy); 
 
 		try {
-			URL url = new URL("http://gnax-ded350.simplehelix.com/fiddlers/winners_feed.xml");
+			URL url = new URL("http://fiddlers.no-ip.org/winners_feed.xml");
 
 			XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
 			factory.setNamespaceAware(false);

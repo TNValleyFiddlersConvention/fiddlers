@@ -29,7 +29,7 @@ public class Schedule extends ListActivity {
 		StrictMode.setThreadPolicy(policy); 
 
 		try {
-			URL url = new URL("http://gnax-ded350.simplehelix.com/fiddlers/onstage.xml");
+			URL url = new URL("http://fiddlers.no-ip.org/onstage.xml");
 
 			XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
 			factory.setNamespaceAware(false);
@@ -57,7 +57,7 @@ public class Schedule extends ListActivity {
 			}
 
 			// next feed.
-			url = new URL("http://gnax-ded350.simplehelix.com/fiddlers/upnext.xml");
+			url = new URL("http://fiddlers.no-ip.org/nextup.xml");
 			
 			// We will get the XML from an input stream
 			xpp.setInput(url.openConnection().getInputStream(), null);
@@ -81,7 +81,7 @@ public class Schedule extends ListActivity {
 			}
 				
 			// next feed.
-			url = new URL("http://gnax-ded350.simplehelix.com/fiddlers/events.xml");
+			url = new URL("http://fiddlers.no-ip.org/events.xml");
 			
 			// We will get the XML from an input stream
 			xpp.setInput(url.openConnection().getInputStream(), null);

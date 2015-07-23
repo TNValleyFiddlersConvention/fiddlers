@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
 	public void OnClickLogo(View view) {
 	// Open the TVOTFC website after clicking on the Fiddler logo.		
 		Intent intent_website=new Intent(Intent.ACTION_VIEW);
-		intent_website.setData(Uri.parse("http://www.tvotfc.com/"));
+		intent_website.setData(Uri.parse("http://www.fiddlers.no-ip.org/"));
 		startActivity(intent_website);		
 	}
 
