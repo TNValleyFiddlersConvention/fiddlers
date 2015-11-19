@@ -13,12 +13,14 @@ import UIKit
 
 class WinnersTableViewController: UITableViewController {
     
-    var con = WinnerModel()
+    //this is the connection variable
+    var con = ServerConnect()
+    //jsonResult is where we store the data returned from the server
     var jsonResult = NSArray()
     override func viewDidLoad()
     {
-    
-         jsonResult = con.downloadItems("http://mcs.athens.edu:9880/winners.php")
+         //This is where we actually fetched the data from the server
+         jsonResult = con.downloadItems(winners)
       
     }
 
@@ -43,65 +45,25 @@ class WinnersTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
         
+        //This is where we determine which table view's cells are being modified
+        let cell = tableView.dequeueReusableCellWithIdentifier("winnersList", forIndexPath: indexPath)
+        
+        //the entry variable is where we are pulling out the single entry that we want to work with
         let entry: NSDictionary = jsonResult[indexPath.row] as! NSDictionary
+        
+        //the name variable is where we are going to store the name of the winner
         var name = entry["fname"] as! String
         name += " "
         name += entry["lname"] as! String
         
-        cell.textLabel?.text = name
-       // cell.imageView!.image = UIImage(named: "Button")
+        //here we are displaying the name of the category from the entry
+        cell.textLabel?.text = (entry["category_name"] as! String)
         
-        // Configure the cell...
-
+        //here we are displaying the name of the winner
+        cell.detailTextLabel?.text = name
+        
         return cell
     }
-    
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

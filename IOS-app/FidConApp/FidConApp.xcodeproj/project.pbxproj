@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D61BC551BE2ECD70011D936 /* DisplayNamesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D61BC541BE2ECD70011D936 /* DisplayNamesTableViewController.swift */; };
+		0D6813A91BF3A86100979191 /* PhpDirectories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6813A81BF3A86100979191 /* PhpDirectories.swift */; };
 		0DBA54FE1BA370C90061AC36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA54FD1BA370C90061AC36 /* AppDelegate.swift */; };
 		0DBA55001BA370C90061AC36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA54FF1BA370C90061AC36 /* ViewController.swift */; };
 		0DBA55031BA370C90061AC36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DBA55011BA370C90061AC36 /* Main.storyboard */; };
@@ -20,7 +22,7 @@
 		0DBA55291BA3A97C0061AC36 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA55281BA3A97C0061AC36 /* ScheduleTableViewController.swift */; };
 		0DBA552B1BA3AADA0061AC36 /* ContestantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA552A1BA3AADA0061AC36 /* ContestantsTableViewController.swift */; };
 		0DBA552D1BA3B81E0061AC36 /* WinnersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA552C1BA3B81E0061AC36 /* WinnersTableViewController.swift */; };
-		8488B58C1BDB34E200010F57 /* WinnerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8488B58B1BDB34E200010F57 /* WinnerModel.m */; };
+		8488B58C1BDB34E200010F57 /* ServerConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 8488B58B1BDB34E200010F57 /* ServerConnect.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D61BC541BE2ECD70011D936 /* DisplayNamesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayNamesTableViewController.swift; sourceTree = "<group>"; };
+		0D6813A81BF3A86100979191 /* PhpDirectories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhpDirectories.swift; path = ../PhpDirectories.swift; sourceTree = "<group>"; };
 		0DBA54F81BA370C90061AC36 /* FidConApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FidConApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DBA54FC1BA370C90061AC36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DBA54FD1BA370C90061AC36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,9 +55,9 @@
 		0DBA55281BA3A97C0061AC36 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
 		0DBA552A1BA3AADA0061AC36 /* ContestantsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContestantsTableViewController.swift; sourceTree = "<group>"; };
 		0DBA552C1BA3B81E0061AC36 /* WinnersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WinnersTableViewController.swift; path = ../WinnersTableViewController.swift; sourceTree = "<group>"; };
-		8488B58B1BDB34E200010F57 /* WinnerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinnerModel.m; sourceTree = "<group>"; };
+		8488B58B1BDB34E200010F57 /* ServerConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerConnect.m; sourceTree = "<group>"; };
 		8488B58D1BDB353100010F57 /* FidConApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FidConApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		8488B58E1BDB357300010F57 /* WinnerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinnerModel.h; sourceTree = "<group>"; };
+		8488B58E1BDB357300010F57 /* ServerConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerConnect.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +100,13 @@
 		0DBA54FA1BA370C90061AC36 /* FidConApp */ = {
 			isa = PBXGroup;
 			children = (
-				8488B58E1BDB357300010F57 /* WinnerModel.h */,
-				8488B58B1BDB34E200010F57 /* WinnerModel.m */,
+				0D6813A81BF3A86100979191 /* PhpDirectories.swift */,
+				8488B58E1BDB357300010F57 /* ServerConnect.h */,
+				8488B58B1BDB34E200010F57 /* ServerConnect.m */,
 				0DBA55281BA3A97C0061AC36 /* ScheduleTableViewController.swift */,
 				0DBA552C1BA3B81E0061AC36 /* WinnersTableViewController.swift */,
 				0DBA552A1BA3AADA0061AC36 /* ContestantsTableViewController.swift */,
+				0D61BC541BE2ECD70011D936 /* DisplayNamesTableViewController.swift */,
 				0DBA54FD1BA370C90061AC36 /* AppDelegate.swift */,
 				0DBA54FF1BA370C90061AC36 /* ViewController.swift */,
 				0DBA55241BA39F8B0061AC36 /* MapViewController.swift */,
@@ -192,7 +198,9 @@
 		0DBA54F01BA370C90061AC36 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Garrett Gillott";
 				TargetAttributes = {
 					0DBA54F71BA370C90061AC36 = {
@@ -252,9 +260,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DBA552D1BA3B81E0061AC36 /* WinnersTableViewController.swift in Sources */,
+				0D61BC551BE2ECD70011D936 /* DisplayNamesTableViewController.swift in Sources */,
+				0D6813A91BF3A86100979191 /* PhpDirectories.swift in Sources */,
 				0DBA55291BA3A97C0061AC36 /* ScheduleTableViewController.swift in Sources */,
 				0DBA55001BA370C90061AC36 /* ViewController.swift in Sources */,
-				8488B58C1BDB34E200010F57 /* WinnerModel.m in Sources */,
+				8488B58C1BDB34E200010F57 /* ServerConnect.m in Sources */,
 				0DBA55251BA39F8B0061AC36 /* MapViewController.swift in Sources */,
 				0DBA54FE1BA370C90061AC36 /* AppDelegate.swift in Sources */,
 				0DBA552B1BA3AADA0061AC36 /* ContestantsTableViewController.swift in Sources */,
@@ -320,6 +330,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -339,6 +350,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "FidConApp/FidConApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -377,6 +389,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "FidConApp/FidConApp-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -389,6 +402,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = FidConApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AthensStateUniversity.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "FidConApp/FidConApp-Bridging-Header.h";
@@ -402,6 +416,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = FidConApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AthensStateUniversity.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "FidConApp/FidConApp-Bridging-Header.h";
@@ -422,6 +437,7 @@
 				);
 				INFOPLIST_FILE = FidConAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AthensStateUniversity.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FidConApp.app/FidConApp";
 			};
@@ -437,6 +453,7 @@
 				);
 				INFOPLIST_FILE = FidConAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AthensStateUniversity.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FidConApp.app/FidConApp";
 			};

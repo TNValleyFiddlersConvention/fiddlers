@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WinnerModel.h"
+#import "ServerConnect.h"
 
-@implementation WinnerModel
+@implementation ServerConnect
 
 - (NSArray *)downloadItems:(NSString*)url
 {

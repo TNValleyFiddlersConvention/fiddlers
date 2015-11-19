@@ -9,15 +9,15 @@
 #import <Foundation/Foundation.h>
 
 
-@protocol WinnerModelProtocol <NSObject>
+@protocol ServerConnectProtocol <NSObject>
 
 - (void)itemsDownloaded:(NSArray *)items;
 
 @end
 
-@interface WinnerModel : NSObject
+@interface ServerConnect : NSObject
 
-@property (nonatomic, weak) id<WinnerModelProtocol> delegate;
+@property (nonatomic, weak) id<ServerConnectProtocol> delegate;
 
 - (NSArray *)downloadItems:(NSString*)url;
 
