@@ -10,8 +10,10 @@
 	<meta name="keywords" content="Tennessee Valley, Fiddler's Convention, Athens State University,
 		Bluegrass Festival">
 	<link rel="stylesheet" href="main.css">
-	<meta http-equiv="refresh" content="5; url=blugrass_band.php"</>
+	<meta http-equiv="refresh" content="5; url=bluegrass_band.php"</>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="tabs_library.js"></script>
+	<script src="tabs.js"></script>
 </head>
 <body>
 	<header>
@@ -45,18 +47,15 @@
 	<section>
 		<h2>Beginning Fiddler (Age 11-15)</h2>
 		<?php
-//Make localhost your database 
-$con = mysql_connect("localhost","admin","admin","TestFidCon");
+$con = mysql_connect("localhost","admin","admin","fidcon");
 if(!$con)
 {
 die("cannot connect: ". mysql_error());
 }
 
-mysql_select_db("TestFidCon", $con);
-//Change the value events.category_id to match the desired category you want the results for
-//Also alter the events.finals_place to specify which position you want
+mysql_select_db("fidcon", $con);
 $sql = "SELECT contestants.fname, contestants.lname, events.category_id 
-FROM events, contestants WHERE events.category_id = 1 AND events.contestant_id = contestants.contestant_id
+FROM events, contestants WHERE events.category_id = 2 AND events.contestant_id = contestants.contestant_id
 AND events.finals_place = 1";
 $myData = mysql_query($sql,$con);
 while($record = mysql_fetch_array($myData))
@@ -70,10 +69,8 @@ echo $record['lname'];
 echo "</br>";
 }
 }
-//Change the value events.category_id to match the desired category you want the results for
-//Also alter the events.finals_place to specify which position you want
 $sql = "SELECT contestants.fname, contestants.lname, events.category_id 
-FROM events, contestants WHERE events.category_id = 1 AND events.contestant_id = contestants.contestant_id
+FROM events, contestants WHERE events.category_id = 2 AND events.contestant_id = contestants.contestant_id
 AND events.finals_place = 2";
 $myData = mysql_query($sql,$con);
 while($record = mysql_fetch_array($myData))
@@ -87,10 +84,8 @@ echo $record['lname'];
 echo "</br>";
 }
 }
-//Change the value events.category_id to match the desired category you want the results for
-//Also alter the events.finals_place to specify which position you want
 $sql = "SELECT contestants.fname, contestants.lname, events.category_id 
-FROM events, contestants WHERE events.category_id = 1 AND events.contestant_id = contestants.contestant_id
+FROM events, contestants WHERE events.category_id = 2 AND events.contestant_id = contestants.contestant_id
 AND events.finals_place = 3";
 $myData = mysql_query($sql,$con);
 while($record = mysql_fetch_array($myData))
@@ -104,7 +99,6 @@ echo $record['lname'];
 echo "</br>";
 }
 }
-
 ?>
 		<p><br></p>
 		<p><br></p>
