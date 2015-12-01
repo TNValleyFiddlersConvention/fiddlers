@@ -1,0 +1,16 @@
+html {
+	width:100%	
+}
+.tblLinks, .noprint {
+	display:none;
+}
+body {
+	background-color:white;
+	color:black;	
+}
+a:link, a:visited {
+	color: #781351;
+}
+img {
+	border: 0;	
+}

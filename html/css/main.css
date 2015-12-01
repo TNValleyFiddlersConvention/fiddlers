@@ -1,0 +1,169 @@
+/* CSS Design Document */
+
+/* DEFAULT PAGE ALIGNMENT */
+.default_page_align
+{
+	margin-left:  170px;
+	margin-right:  100px;
+}
+
+body
+{
+	background-color:  #A0CAF9;	/* PAGE BG COLOR */
+	color:  #FFFFFF;
+}
+
+p
+{
+	margin-left:  auto;
+	margin-right:  auto;
+	text-align:  center;
+	color:  #FFFFFF;
+}
+
+table
+{
+	/*
+	margin-left:  auto;
+	margin-right:  auto;
+	*/
+/*
+	padding-left:  0px;
+	padding-right:  0px;
+	padding-bottom: 0px;
+*/
+	/*
+	text-align:  center;
+	border-collapse:  collapse;
+	*/
+	
+	/*border-color:  #555555;*/  /*#999999*/
+	
+	/*
+	border-width:  0px;
+	border-style:  solid;
+	*/
+	/*width:  auto;*/
+}
+
+.menu  /* MENU BACKGROUND COLOR (PAGE COLOR) */
+{
+	background-color:  #3151B8;
+}
+
+td
+{
+	/* padding:  5px; */ /* padding on the menu bar */
+	padding-left:  5px;
+	padding-right:  5px;
+	padding-top:  3px;
+	padding-bottom:  3px;  /* orig 3px;  */
+}
+
+.tblLinks
+{
+	background-color: #3151B8;
+	color: #3151B8;
+	font-size: 10pt;
+	font-family: tahoma;
+	font-weight: 10pt;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+.mnuLinks 
+{
+	color: #3151B8; /* #3F3FC4 */
+	font-size: 10pt;
+	text-decoration: none;
+	width:100%;
+	height:100%;
+	display:block;
+}
+
+.mnuLinks:link 
+{ 
+	color: navy;  /* #BFBFBF*/
+}
+
+.mnuLinks:visited 
+{ 
+	color: navy; 
+} 
+
+.mnuLinks:hover 
+{ 
+	color: white; 
+}
+
+.picZIndex
+{
+	z-index: 1008;
+}
+
+.innerTbl
+{
+	z-index: 1006;
+}
+
+.tblMain
+{
+	z-index: 1002;
+	width:  800px;
+	border:  0px;
+}
+
+.trbody
+{
+	background-color:  #3151B8;
+	width:  800px;
+	padding-left:  5px;
+	padding-right:  5px;
+	padding-top:  0px;
+	padding-bottom:  0px;
+}
+
+.innerbody
+{
+	background-color:  #FFFFF5;
+	color:  navy;
+	border:  0px;
+	width:  798px;
+	text-align:  left;
+}
+
+/* For the Footer on all pages */
+.trfoot
+{
+	background-color:  #3151B8;
+	/*color:  #FFFFFF;*/
+	width:  800px;
+	padding-left:  5px;
+	padding-right:  5px;
+	padding-top:  2px;
+	padding-bottom:  10px;
+}
+
+.tblfeet
+{
+	width:  800px;
+	background-color:  #3151B8;
+}
+
+.ncn
+{
+	/*
+	width: 100px;
+	height: 60 px;
+	color: maroon;
+	background-color: yellow;
+	*/
+	
+}
+
+
+
+
+
+
+
