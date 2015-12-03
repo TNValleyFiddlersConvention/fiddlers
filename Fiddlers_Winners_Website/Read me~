@@ -1,0 +1,3 @@
+IOS app configured to use http://mcs.athens.edu:9800
+This can be changed in PhpDirectories.swift by changeing root.
+If any new additions need to be added they would be added here.
